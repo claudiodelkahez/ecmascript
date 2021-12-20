@@ -38,6 +38,10 @@ console.log(epicPhrase2);
 
 //</ 1>
 
+
+
+
+
 //< 2>
 
 //Multilinea antes de ES6
@@ -109,3 +113,71 @@ console.log(globalVar);
 const a = 'bd';
 //a = 'a'; No me lo va a permitir porque el valor constate no puede ser reasignado
 
+//< /2>
+
+
+
+
+
+//< 3>
+//Parámetros en objetos.
+
+let nombre = 'Claudio';
+let edad = 31;
+
+//Parámetros en objetos en ES5 
+obj = { nombre: nombre, edad: edad };
+//Parámetros en ES6 
+//Nos permite ahorra codigo cuando el objeto es mas grande.
+obj2 = { nombre, edad };
+console.log(obj2);
+
+//Arrow functions
+// Sintaxis mas reducida y un dis no vinculable
+
+const names = [
+    { name: 'Claudio', age: 31 },
+    { name: 'Yesica', age: 25 }
+]
+
+//ES5 
+let listOfNames = names.map(function (item) {
+    console.log(item.name);
+
+});
+
+//ES6
+
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (name, age, country) => {
+    //aqui iria el bloque de codigo que estoy estableciendo para list of names3
+}
+
+const listOfNames4 = name => {
+    //bloque de codigo
+}
+
+const square = num => nume * num;
+
+//Promesas (para trabajar el asinmcronismo)
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (false) {
+            resolve('Hey!');
+        } else {
+            reject('Ups!');
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .catch(error => console.log(error));
+
+
+// En el curso de asincronismo se ahonda en las promesas y como hacer llamados a una API.
+
+
+//</ 3>
