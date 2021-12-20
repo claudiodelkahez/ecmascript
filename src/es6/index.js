@@ -1,36 +1,39 @@
-function newFunction(name, age, country) {
-    var name = name || "oscar";
-    var age = age || 21;
-    var country = country || "Colombia";
+//< 1>
 
+//Antes de ES6
+
+function newFunction(name, age, country) {
+    var name = name || "Claudio";
+    var age = age || 31;
+    var country = country || "ARG";
     console.log(name, country, age);
 
 }
 
-// es6
+// ES6 Parametros por defecto
 
-function newFunction2(name = 'oscar', age = 32, country = "Arg"){
-    console.log(name,age,country);
+function newFunction2(name = 'Oscar', age = 31, country = "ARG") {
+    console.log(name, age, country);
 }
 
-newFunction2();
+newFunction2(); // Toma los elementos por defecto .
+newFunction2('Ricardo', '23', 'CO'); // Toma los elementos que yo le asigno.
 
-newFunction2('Ricardo', '23', 'CO');
 
-
-//template literals
+//Antes de ES6
 
 let hello = "Hello";
 let world = "world";
 
 let epicPhrase = hello + ' ' + world;
-
 console.log(epicPhrase);
 
 
-//es6 
-//se usan comillas francesas, signo dolar y corchetes para concatenar variables ej: `${hola} ${mundo}`
-let epicPhrase2 = `${hello} ${world}`;
+//ES6 Template literals
+//Nos permiten hacer uniones de manera mas amigable sin usar el signo + y las " " 
 
+let epicPhrase2 = `${hello} ${world}`; //Se usa: `${variable} ${variable}` para concatenar
 console.log(epicPhrase2);
 
+
+//</ 1>
