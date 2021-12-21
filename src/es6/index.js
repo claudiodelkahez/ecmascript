@@ -181,3 +181,29 @@ helloPromise()
 
 
 //</ 3>
+
+
+//< 4>
+
+//Las clases son una forma en la que manejamos una sintaxis mas clara para manejar objetos y tambien la herencia dentro de javascript y esto nos permite aplicar la POO dentro de javascript
+
+class calculator {
+    //introducimos la palabra class con lo cual indicamos que estamos definiendo una clase
+    consturctor() {
+        //las clases necesitan un cosnstructor, en este asignaremos las variables DENTRO DEL SCOPE GLOBAL
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB) {
+        //sum es un metodo, al cual pasaremos los valores A y B
+        this.valueA = valueA;
+        //con esto estoy asignando las variables que construi previamente a los valores que recibe.
+        this.valueB = valueB;
+        return this.valueA + this.valueB;
+        //aqui se hace la suma de dichos valores
+    }
+}
+
+const calc = new calculator();
+// Tener en cuenta que para llamar a una clase con una variable, es necesario el "new", explicitamente necesario e indispensable. Si se coloca solo el nombre de la clase esto no va a funcionar.
+console.log(calc.sum(5, 5));
