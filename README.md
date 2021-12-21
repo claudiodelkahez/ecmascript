@@ -26,7 +26,7 @@ ECMAScript 8
 
 ### Clase 7: Que se implementó en ES8?
 
-> Includes
-> Asignacion de exponente con **
+- Includes
+- Asignacion de exponente con **
 
-<https://platzi.com/clases/1815-ecmascript-6/25944-que-se-implemento-en-es8/>
+> <https://platzi.com/clases/1815-ecmascript-6/25944-que-se-implemento-en-es8/>
