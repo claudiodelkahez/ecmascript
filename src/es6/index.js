@@ -183,7 +183,7 @@ helloPromise()
 //</ 3>
 
 
-//< 4>
+//< 5>
 
 //Las clases son una forma en la que manejamos una sintaxis mas clara para manejar objetos y tambien la herencia dentro de javascript y esto nos permite aplicar la POO dentro de javascript
 
@@ -207,3 +207,30 @@ class calculator {
 const calc = new calculator();
 // Tener en cuenta que para llamar a una clase con una variable, es necesario el "new", explicitamente necesario e indispensable. Si se coloca solo el nombre de la clase esto no va a funcionar.
 console.log(calc.sum(5, 5));
+
+//Como trabajamos con modulos?
+//Para esto, creamos otro archivo.
+
+import { hello } from './moduledd';
+//con esta linea importamos el módulo
+//esto significa que podemos tener funciones que hagan ciertas tareas en especifico como (como llamar a una API), fuera de nuestro documento principal y simplemente importarlas.
+
+hello();
+
+//Generadores
+
+//Tiene una sintaxis especial
+//Puede utilizarse para uina serie de fibonacci, por ejemplo
+function* helloWorld() {
+    if (true) {
+        yield 'Hello, ';
+    }
+    if (true) {
+        yield 'world!';
+    }
+};
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
