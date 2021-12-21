@@ -20,3 +20,13 @@ ECMAScript 6
 ECMAScript 7
 
 ### Clase 6: Qué se implementó en ES7?
+<https://platzi.com/clases/1815-ecmascript-6/25945-que-se-implemento-en-es7/>
+
+ECMAScript 8
+
+### Clase 7: Que se implementó en ES8?
+
+> Includes
+> Asignacion de exponente con **
+
+<https://platzi.com/clases/1815-ecmascript-6/25944-que-se-implemento-en-es8/>
